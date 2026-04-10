@@ -1,58 +1,231 @@
-# 🌐 Digital Portfolio - ULAGAMMAL U
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ULAGAMMAL U | Digital Profile</title>
 
-## 👩‍🎓 About Me
-I am an Electronics and Communication Engineering student with a strong interest in embedded systems, circuit design, and emerging technologies. I am passionate about developing innovative solutions to real-world problems and continuously improving my technical skills.
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
----
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-## 🛠 Skills
-- C Programming
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #f6f9fc, #e9efff);
+}
 
----
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #4facfe, #6a11cb);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
 
-## 🚀 Projects
+/* PROFILE IMAGE */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-top: 20px;
+    object-fit: cover;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
 
-### 🔹 Animal Detection System for Rural Safety
-A smart system designed to detect animal movement near rural homes using sensors. It alerts users through buzzer notifications, helping improve safety and prevent unexpected animal intrusions.
+.profile-img:hover {
+    transform: scale(1.08);
+}
 
----
+header h1 {
+    font-size: 42px;
+    margin-top: 10px;
+}
 
-### 🔹 Bio-Inspired Artificial Neuron Circuits for Neuromorphic Computing
-Designed bio-inspired artificial neuron circuits to mimic neural behavior for neuromorphic computing. Focused on hardware-based brain-like computation systems.
+header p {
+    font-size: 18px;
+}
 
----
+/* CONTAINER */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
 
-### 🔹 AI-Based Government Mapping Scheme
-Developed an AI-based concept to map and analyze government schemes for better accessibility and awareness, improving public benefit distribution.
+/* SECTION */
+section {
+    background: white;
+    margin: 25px 0;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
 
----
+section:hover {
+    transform: translateY(-5px);
+}
 
-## 🏆 Achievements
-- Presented Rural Animal Detection Project  
-- Active learner in electronics and programming  
+h2 {
+    color: #6a11cb;
+    margin-bottom: 15px;
+}
 
----
+/* PROJECT GRID */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
 
-## 📜 Certifications
-- SACOEISUM Winning Certificate  
-- Participated in Ideathon  
+.project {
+    background: linear-gradient(135deg, #eef2ff, #ffffff);
+    padding: 20px;
+    border-radius: 12px;
+    border-left: 5px solid #4facfe;
+    transition: 0.3s;
+}
 
----
+.project:hover {
+    transform: scale(1.05);
+}
 
-## 📞 Contact
+/* CONTACT BUTTONS */
+.contact a {
+    display: inline-block;
+    margin: 10px 10px 0 0;
+    padding: 12px 18px;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: 0.3s;
+}
 
-[![Email](https://img.shields.io/badge/Email-Contact-red?style=for-the-badge)](mailto:ulagammalu.ug.25.ec@francisxavier.ac.in)
+.github {
+    background: linear-gradient(45deg, #000, #434343);
+}
 
-[![GitHub](https://img.shields.io/badge/GitHub-Profile-black?style=for-the-badge)](https://github.com/ulagammaluma16-afk)
+.linkedin {
+    background: linear-gradient(45deg, #0a66c2, #004182);
+}
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=for-the-badge)](https://www.linkedin.com/in/ulagammal-u-3640a3382)
+.email {
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+}
 
----
+.contact a:hover {
+    transform: scale(1.1);
+}
 
-## 🌟 Live Website
-[![Portfolio](https://img.shields.io/badge/View-Portfolio-green?style=for-the-badge)](https://yourusername.github.io/repository-name/)
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #222;
+    color: white;
+}
+</style>
+</head>
 
----
+<body>
 
-## 📌 Note
-This is my personal digital portfolio website created using HTML and CSS and hosted using GitHub Pages.
+<header>
+    <h1>ULAGAMMAL U</h1>
+
+    <!-- YOUR PHOTO -->
+    <img src="profile.jpg" alt="ULAGAMMAL U" class="profile-img">
+
+    <p>Electronics & Communication Engineering Student | Embedded Systems Enthusiast</p>
+</header>
+
+<div class="container">
+
+<section>
+    <h2>🎓 About Me</h2>
+    <p>
+        I am an Electronics and Communication Engineering student with a strong interest in embedded systems, 
+        circuit design, and emerging technologies. I am passionate about developing innovative solutions 
+        and continuously enhancing my technical and problem-solving skills.
+    </p>
+</section>
+
+<section>
+    <h2>🛠 Skills</h2>
+    <ul>
+        <li>C Programming</li>
+    </ul>
+</section>
+
+<section>
+    <h2>🚀 Projects</h2>
+
+    <div class="projects">
+
+        <div class="project">
+            <h3>🐾 Animal Detection System for Rural Safety</h3>
+            <p>
+                A system designed to detect animal movement near rural households using sensors and alert users 
+                through buzzer notifications to improve safety.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>🧠 Bio-Inspired Artificial Neuron Circuits</h3>
+            <p>
+                Developed neuron-inspired circuits for neuromorphic computing applications.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>🤖 AI-Based Government Mapping Scheme</h3>
+            <p>
+                AI system to analyze and map government schemes for better public access.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2>🏆 Achievements</h2>
+    <ul>
+        <li>Presented Animal Detection Project</li>
+        <li>Active learner in electronics & programming</li>
+    </ul>
+</section>
+
+<section>
+    <h2>📜 Certifications</h2>
+    <ul>
+        <li>SACOEISUM Winning Certificate</li>
+        <li>Ideathon Participation</li>
+    </ul>
+</section>
+
+<section class="contact">
+    <h2>📞 Contact</h2>
+
+    <a href="mailto:ulagammalu.ug.25.ec@francisxavier.ac.in" class="email">Email</a>
+
+    <a href="https://github.com/ulagammaluma16-afk" target="_blank" class="github">GitHub</a>
+
+    <a href="https://www.linkedin.com/in/ulagammal-u-3640a3382" target="_blank" class="linkedin">LinkedIn</a>
+
+</section>
+
+</div>
+
+<footer>
+    <p>© 2026 ULAGAMMAL U | Digital Portfolio</p>
+</footer>
+
+</body>
+</html>
